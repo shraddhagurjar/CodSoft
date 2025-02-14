@@ -1,0 +1,296 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+
+header{
+    
+    margin-top: 20px;
+    background-color: black;
+    width:100%;
+    height:10vh;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo{
+    display:flex;
+    justify-content: flex-start;
+    height:75px;
+    width:120px;
+    box-shadow: #e67e22;
+}
+
+ .logo1{
+    text-decoration: none;
+    font-size: 1.0rem;
+    margin-left: 5px;
+    color: white;
+    transition : 1.5 ease;
+    padding-right: 30px;
+
+}
+.logo1:hover{
+    background-color: brown;
+    color:black;
+}
+
+
+
+nav a{
+    color:white;
+    font-size: 1.0em;
+    font-weight: 200px;
+    margin-left: 20px;
+    text-decoration: none;
+
+}
+nav a:hover{
+    background-color: brown;
+    color: black;
+}
+
+nav .active{
+    color:brown;
+
+}
+
+span{
+    color: brown;
+}
+
+/* HOME*/
+.home{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 5px;
+    background-color: grey;
+     height:60vh;
+     
+}
+
+.home-content h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    
+}
+
+.home-content p{
+    margin: 50px;
+    padding: 5px;
+    font-size: 0.9em;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    text-decoration: none;
+    gap: 10px;
+    border: 2px solid transparent;
+    font-size: 1.2em;
+    color: #d8d8cc;
+   
+}
+.btn:hover{
+    background-color:brown;
+    color:black;
+}
+
+/* Value Proposition Section */
+.value-prop {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.value-prop h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: gray;
+}
+
+/* Product Gallery Section */
+.product-gallery {
+    padding: 50px 20px;
+    background-color: gray;
+    text-align: center;
+}
+
+.product-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Process Section */
+.process {
+    background-color: white;
+    padding: 50px 20px;
+}
+
+.process h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.step {
+    background-color:black;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.step p{
+    color: gray;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: gray;
+}
+
+.testimonials .testimonial {
+   
+    padding: 20px;
+    border-radius: 5px;
+   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+.testimonials .testimonial p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* CTA Section */
+.cta {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+    color:black;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta .cta-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    background-color: #d35400;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+footer .social-links a:hover {
+    color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
